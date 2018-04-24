@@ -9,11 +9,24 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { LoginPage } from '../pages/login/login';
+import { PedidoPage } from '../pages/pedido/pedido';
+import { AyudaPage } from '../pages/ayuda/ayuda';
+import { HistorialPage } from '../pages/historial/historial';
+import { PreguntasPage } from '../pages/preguntas/preguntas';
+import { PagoPage } from '../pages/pago/pago'; 
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    LoginPage,
+    PedidoPage,
+    AyudaPage,
+    HistorialPage,
+    PreguntasPage,
+    PagoPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +36,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    LoginPage,
+    PedidoPage,
+    AyudaPage,
+    HistorialPage,
+    PreguntasPage,
+    PagoPage
   ],
   providers: [
     StatusBar,
