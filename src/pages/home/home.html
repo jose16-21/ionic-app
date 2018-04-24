@@ -7,12 +7,30 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content class="card-background-page">
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-card (click)="irsubcategoria()">
+      <img src="assets/imgs/card-saopaolo.png" />
+      <div class="card-title">Vinos</div>
+      <div class="card-subtitle">41 clases</div>
+  </ion-card>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-card (click)="irsubcategoria()">
+      <img src="assets/imgs/card-amsterdam.png" />
+      <div class="card-title">Cerveza</div>
+      <div class="card-subtitle">64 clases</div>
+  </ion-card>
+
+  <ion-card (click)="irsubcategoria()">
+      <img src="assets/imgs/card-sf.png" />
+      <div class="card-title">Wisquis</div>
+      <div class="card-subtitle">72 clases</div>
+  </ion-card>
+
+  <ion-card (click)="irsubcategoria()">
+      <img src="assets/imgs/card-madison.png" />
+      <div class="card-title">Tequilla</div>
+      <div class="card-subtitle">28 clases</div>
+  </ion-card>
+
 </ion-content>
