@@ -10,8 +10,7 @@ import { PedidoPage } from '../pages/pedido/pedido';
 import { AyudaPage } from '../pages/ayuda/ayuda';
 import { HistorialPage } from '../pages/historial/historial';
 import { PreguntasPage } from '../pages/preguntas/preguntas';
-import { PagoPage } from '../pages/pago/pago'; 
-
+import { PagoPage } from '../pages/pago/pago';
 @Component({
   templateUrl: 'app.html'
 })

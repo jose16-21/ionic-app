@@ -15,6 +15,10 @@ import { AyudaPage } from '../pages/ayuda/ayuda';
 import { HistorialPage } from '../pages/historial/historial';
 import { PreguntasPage } from '../pages/preguntas/preguntas';
 import { PagoPage } from '../pages/pago/pago'; 
+ 
+import { SubCategoriasPage } from '../pages/sub-categorias/sub-categorias';
+import { ProductoPage } from '../pages/producto/producto';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { PagoPage } from '../pages/pago/pago';
     AyudaPage,
     HistorialPage,
     PreguntasPage,
-    PagoPage
+    PagoPage,
+    SubCategoriasPage,
+    ProductoPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +48,9 @@ import { PagoPage } from '../pages/pago/pago';
     AyudaPage,
     HistorialPage,
     PreguntasPage,
-    PagoPage
+    PagoPage,
+    SubCategoriasPage,
+    ProductoPage
   ],
   providers: [
     StatusBar,
