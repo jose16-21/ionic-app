@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+//import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { PedidoPage } from '../pages/pedido/pedido';
 import { AyudaPage } from '../pages/ayuda/ayuda';
@@ -19,21 +19,23 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, 
+                component: any, 
+                icon : string }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'Login', component: LoginPage },
-      { title: 'Pago', component: PagoPage },
-      { title: 'Pedido', component: PedidoPage },
-      { title: 'Ayuda', component: AyudaPage },
-      { title: 'Historial', component: HistorialPage },
-      { title: 'Preguntas', component: PreguntasPage }
+      { title: 'Comprar', component: HomePage ,icon : 'cart' },
+      //{ title: 'List', component: ListPage },
+      { title: 'Login', component: LoginPage, icon : 'contact' },
+      { title: 'Pago', component: PagoPage, icon : 'card' },
+      { title: 'Pedido', component: PedidoPage, icon : 'car' },
+      { title: 'Ayuda', component: AyudaPage, icon : 'help' },
+      { title: 'Historial', component: HistorialPage, icon : 'filing' },
+      { title: 'Preguntas', component: PreguntasPage, icon : 'happy' }
     ];
 
   }

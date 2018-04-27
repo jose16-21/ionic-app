@@ -9,5 +9,31 @@
 
 
 <ion-content padding>
-
+  <form #loginForm="ngForm" (ngSubmit)="Pago()" autocomplete="off">
+    <ion-row>
+      <ion-col>
+          <ion-list inset>
+      <ion-item>
+        <ion-input placeholder="Numero de Tarjeta" name="tarjeta" [(ngModel)]="tarjeta" type="text" required ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Mes Expira" type="text" required name="mes" [(ngModel)]="mes"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder ="Año Expira"type="text" name="anio" [(ngModel)]="anio" required ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="CVV" type="text" name="ccv" [(ngModel)]="ccv" required ></ion-input>
+      </ion-item>
+    </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+        <button ion-button class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid">Agregar
+        </button>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>

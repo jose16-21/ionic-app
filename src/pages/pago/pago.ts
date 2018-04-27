@@ -21,5 +21,4 @@ export class PagoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PagoPage');
   }
-
 }

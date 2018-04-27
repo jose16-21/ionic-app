@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {SubCategoriasPage} from '../sub-categorias/sub-categorias';
+import { ProductoPage } from '../producto/producto';
 
 @Component({
   selector: 'page-home',
@@ -12,6 +12,6 @@ export class HomePage {
 
   }
   irsubcategoria(){
-    this.navCtrl.push(SubCategoriasPage);
+    this.navCtrl.push(ProductoPage);
   }
 }
